@@ -11,28 +11,41 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(315deg, rgba(255, 0, 0, 0), rgba(255, 255, 255, 0.767) 15%, rgba(255, 255, 255, 0.767) 90%, rgba(255, 255, 255, 0)), url(/background.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .nav {
     position: absolute;
-    background-color: aliceblue;
+    background-color: rgba(102, 51, 153, 0.622);
+    backdrop-filter: blur(15px);
     top: 0;
     width: 100%;
+    border-bottom: 3px solid;
 }
 
 .nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
     font-size: 1.5rem;
     list-style: none;
 }
 
 .nav ul li {
-    padding: 15px;
-    border: 1px solid red;
+    padding: 10px;
     flex-grow: 1;
     text-align: center;
+}
+
+.li {
+    border-inline: 2px solid;
+}
+
+a {
+    color: azure;
 }
 
 .navbar {
@@ -42,8 +55,9 @@
     top: 70px;
     padding: 15px 15px 15px 25px;
     border-radius: 30px;
-    background-color: antiquewhite;
+    background-color: rebeccapurple;
     cursor: pointer;
+    color: azure;
 }
 
 form section {
@@ -78,7 +92,8 @@ form section div input {
 
 form section div input:focus, 
 form section div input:valid {
-    background-color: red;
+    background-color: rgb(196, 149, 243);
+    color: azure;
 }
 
 form section div input:focus::placeholder {
@@ -89,13 +104,15 @@ form section div input:focus::placeholder {
     font-size: 1.2rem;
     padding: 35px 20px 20px;
     clip-path: polygon(0% 100% , 50% 0% , 100% 100%);
-    background: linear-gradient(rgb(255, 100, 100), rgb(255, 55, 55));
+    background: linear-gradient(rgb(196, 149, 243), rgb(90, 45, 136));
+    color: azure;
     cursor: pointer;
     transition: .25s;
 }
 
 .submit:hover {
     scale: 1.1;
+    background: linear-gradient(rgb(90, 45, 136), rgb(196, 149, 243));
 }
 
 .submit:active {
